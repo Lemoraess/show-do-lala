@@ -1,0 +1,28 @@
+.questions-container {
+}
+
+.question {
+  border: 2px solid #ccc;
+  background-color: rgba(249, 249, 249, 0.4);
+  padding: 20px 10px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+li:hover {
+  background-color: rgba(164, 75, 232, 0.9);
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Questions.css";
 
 const questions = [
   {
@@ -91,8 +92,8 @@ export default function Questions() {
     }
   };
   return (
-    <div className="quiz">
-      <h2>{questions[currentQuestion].pergunta}</h2>
+    <div className="questions-container">
+      <h2 className="question">{questions[currentQuestion].pergunta}</h2>
       <ul>
         {questions[currentQuestion].options.map((option, index) => (
           <li key={index}>
