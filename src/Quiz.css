@@ -1,0 +1,11 @@
+.start-btn {
+  background-color: rgb(54, 177, 205);
+  color: black;
+  border: none;
+  padding: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  transition: background-color 0.3s ease;
+}
