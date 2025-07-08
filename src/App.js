@@ -13,7 +13,17 @@ export default function App() {
       <main className="App-main mt-5">
         <Quiz />
       </main>
-      <footer>Coded by Lenise M Santana</footer>
+      <footer>
+        Coded by Le Santana, open-sourced at{" "}
+        <a
+          href="https://github.com/Lemoraess/show-do-lala"
+          target="_blank"
+          rel="noopener"
+        >
+          Github
+        </a>{" "}
+        🤙
+      </footer>
     </div>
   );
 }

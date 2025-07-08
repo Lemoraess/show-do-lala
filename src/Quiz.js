@@ -23,7 +23,11 @@ export default function Quiz() {
       ) : (
         <div>
           <Questions />
-          <button type="button" className="btn start-btn" onClick={startAgain}>
+          <button
+            type="button"
+            className="btn restart-btn"
+            onClick={startAgain}
+          >
             Restart ☺️
           </button>
         </div>
