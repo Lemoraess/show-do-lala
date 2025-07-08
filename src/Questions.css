@@ -5,6 +5,10 @@
   border-radius: 10px;
   font-size: 22px;
 }
+p {
+  font-size: 12px;
+  opacity: 0.6;
+}
 
 ul {
   list-style-type: none;
@@ -12,15 +16,16 @@ ul {
   margin: 20px 0;
 }
 
-li {
+.btn-option {
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   margin: 5px;
   cursor: pointer;
+  width: 70%;
 }
-li:hover {
+.btn-option:hover {
   background-color: rgba(164, 75, 232, 0.9);
 }
 

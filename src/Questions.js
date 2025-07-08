@@ -91,6 +91,7 @@ export default function Questions() {
       setScore(0);
     }
   };
+
   return (
     <div className="questions-container">
       <h2 className="question">{questions[currentQuestion].pergunta}</h2>
@@ -99,7 +100,7 @@ export default function Questions() {
           <li key={index}>
             <button
               type="button"
-              className="btn btn-option"
+              className="btn-option"
               onClick={() => handleAnswer(index)}
             >
               {option}
