@@ -18,7 +18,7 @@ export default function App() {
         <a
           href="https://github.com/Lemoraess/show-do-lala"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           Github
         </a>{" "}
