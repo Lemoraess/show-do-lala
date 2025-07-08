@@ -16,18 +16,14 @@ export default function Quiz() {
   return (
     <div className="quiz-container">
       {quiz === "default" ? (
-        <button type="button" className="btn start-btn" onClick={startQuiz}>
+        <button type="button" className="start-btn" onClick={startQuiz}>
           Start Quiz <br />
           🤓
         </button>
       ) : (
         <div>
           <Questions />
-          <button
-            type="button"
-            className="btn restart-btn"
-            onClick={startAgain}
-          >
+          <button type="button" className="restart-btn" onClick={startAgain}>
             Restart ☺️
           </button>
         </div>
