@@ -73,6 +73,7 @@ const questions = [
 export default function Questions() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
+  const [finished, setFinished] = useState(false);
 
   const handleAnswer = (index) => {
     if (index === questions[currentQuestion].answer) {
@@ -82,16 +83,21 @@ export default function Questions() {
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
     } else {
-      alert(
-        `Quiz terminado! Você acertou ${score + 1} de ${
-          questions.length
-        } perguntas.`
-      );
-      setCurrentQuestion(0);
-      setScore(0);
+      setFinished(true);
     }
   };
 
+  if (finished) {
+    return (
+      <div className="result-container">
+        <h2>
+          {score < 6
+            ? `Você acertou ${score} de ${questions.length} perguntas... Será que conhece bem mesmo o Lala? 👀`
+            : `Você acertou ${score} de ${questions.length} perguntas! Parabéns! Você é quase um Lala expert! 😎`}
+        </h2>
+      </div>
+    );
+  }
   return (
     <div className="questions-container">
       <h2 className="question">{questions[currentQuestion].pergunta}</h2>
