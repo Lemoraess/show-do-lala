@@ -1,3 +1,8 @@
+:root {
+  --primary-color: rgb(11, 89, 106);
+  --secondary-color: rgb(54, 177, 205);
+}
+
 .App {
   text-align: center;
   background-color: rgba(192, 194, 209, 0.7);
@@ -11,20 +16,31 @@
 }
 
 .App-header {
-  background-color: rgba(163, 184, 200, 0.3);
+  background-color: rgba(163, 184, 200, 0.5);
   border-radius: 5px;
   padding: 20px;
 }
 
 .App-header h1 {
-  font-family: "Sixtyfour Convergence", sans-serif;
-  font-size: 80px;
+  font-family: "Monoton", sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1;
   margin: 10px;
+  color: var(--primary-color);
+}
+
+.App-header span {
+  font-size: 50px;
+  font-family: "Rock Salt", cursive;
+  display: block;
+  line-height: 0.3;
 }
 
 .App-header h5 {
   margin: 5px;
   font-size: 18px;
+  color: rgb(11, 89, 106);
 }
 
 .App-main {
@@ -32,11 +48,10 @@
   max-width: 80%;
   display: block;
   margin: 0 auto;
-  padding: 50px;
 }
 
 a:link {
-  color: plum;
+  color: var(--primary-color);
 }
 
 a:hover {
@@ -45,6 +60,7 @@ a:hover {
 
 footer {
   margin: 20px;
+  color: var(--primary-color);
 }
 
 @media (max-width: 600px) {

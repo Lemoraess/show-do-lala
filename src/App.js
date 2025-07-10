@@ -6,7 +6,9 @@ export default function App() {
   return (
     <div className="App mt-3">
       <header className="App-header">
-        <h1>Show do Lala</h1>
+        <h1>
+          SHOW <span>do</span> Lala
+        </h1>
         <h5>Um quiz sobre o Lala 😌</h5>
       </header>
 
